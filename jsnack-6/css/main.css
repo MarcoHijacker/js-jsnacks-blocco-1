@@ -1,0 +1,28 @@
+/* Testa o Croce CSS */
+
+/* Generali */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Exo 2', sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: #cecece;
+  font-size: 12px;
+}
+main {
+  padding: 20px;
+}
+/* Box del gioco */
+.hidden {
+  display: none;
+}
+#lanciaMoneta {
+  margin: 15px 0;
+}
+#numeroUscito {
+  color: green;
+}
