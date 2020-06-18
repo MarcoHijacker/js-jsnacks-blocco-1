@@ -8,7 +8,7 @@ var number2;
 number1 = prompt("Inserisci un numero:");
 number2 = prompt("Inserisci un altro numero:");
 
-// Confronto dei 2 numeri
+// Confronto dei 2 numeri e verifica che siano entrambi numeri
 if (!isNaN(number1) && !isNaN(number2)) {
   number1 = parseInt(number1);
   number2 = parseInt(number2);

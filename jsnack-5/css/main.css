@@ -1,7 +1,6 @@
 /* Calcolatrice CSS */
 
 /* Generali */
-
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +16,7 @@ body {
 main {
   padding: 20px;
 }
+/* Box calcolatrice */
 #risultato {
   color: green;
   font-weight: bold;
