@@ -1,5 +1,14 @@
 // Comparatore di Età JS
 
+/* Richiesta di Andrea:
+Crea un programma che accetta come primo input un numero.
+Al click del bottone "inizia calcolo" apri un numero di prompt uguale al numero precedentemente inserito.
+Ogni prompt chiede il numero di anni di una persona(es. 24, 31) che salverai su una variabile.
+Il tuo compito è quello di:
+(1) stampare in un <h2> l'età più grande.
+(2) stampare in un <p> le varie età in ordine crescente.
+(3) calcolare e stampare in un div l'anno di nascita per ogni età. */
+
 // Dichiarazione variabili
 var iniziaCalcolo = document.getElementById('iniziaCalcolo');
 // Dichiarazione funzione
@@ -43,13 +52,14 @@ iniziaCalcolo.addEventListener("click", function () {
     document.getElementById('oldestOne').innerHTML = Math.max.apply(Math, eta);
     document.getElementById('youngestOne').innerHTML = Math.min.apply(Math, eta);
 
+    // Calcolo le date di nascita a partire dalle età inserite sottraendole da 2020 (anno corrente)
     var dateBirth = "";
 
     for(var i = 0; i < eta.length; i++){
         eta[i] = 2020 - eta[i];
         dateBirth += " "+eta[i];
     }
-
+    // Stampa le date di nascita (nell'ordine di inserimento)
     document.getElementById('listaNascit').innerHTML = dateBirth;
 
     // Ordina crescentemente i valori dell'array
@@ -58,7 +68,7 @@ iniziaCalcolo.addEventListener("click", function () {
     // Inietta i valori dell'array eta, uno per uno, in una stringa e separali da spazio
     var printThisOrd = "";
     var i = 0;
-
+    // Ripristino l'età originale dato che a questo punto eta[] contiene le date di nascita
     for(var i = 0; i < eta.length; i++){
         eta[i] = 2020 - eta[i];
         printThisOrd += " "+eta[i];
