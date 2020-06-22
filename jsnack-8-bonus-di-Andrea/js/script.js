@@ -24,7 +24,7 @@ login.addEventListener("click", function () {
   // Inizializzazione span contenente errori
   document.getElementById('esito').innerHTML = "";
 
-  // Creazione array multidimensionale con i campi del form
+  // Creazione array con i campi del form
   var usrX = [username, password, role];
 
   // Confronto uno a uno, valore per valore, degli 'account' presenti nell'array
