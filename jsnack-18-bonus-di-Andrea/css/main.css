@@ -1,0 +1,35 @@
+/* Busta Paga CSS */
+
+/* Generali */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Exo 2', sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/haunted-house.jpg);
+  background-size: cover;
+  font-size: 12px;
+}
+main {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Box richiesta dati */
+#calcolaStipendio {
+  margin: 10px 0;
+}
+#resultBox {
+  background-color: lightgrey;
+  border: solid 1px darkcyan;
+  width: 500px;
+  min-height: 100px;
+}
