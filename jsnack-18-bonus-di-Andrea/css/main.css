@@ -32,4 +32,5 @@ main {
   border: solid 1px darkcyan;
   width: 500px;
   min-height: 100px;
+  padding: 10px;
 }
